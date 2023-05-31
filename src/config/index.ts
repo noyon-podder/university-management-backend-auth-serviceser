@@ -7,5 +7,3 @@ export default {
   port: process.env.PORT,
   database_url: process.env.DATABASE_URL,
 }
-//password: Os2Qu9rtyWW5my4R
-//db_name: university-management
