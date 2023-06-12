@@ -1,0 +1,28 @@
+{
+  message: 'Connected to mongo 🧠',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM!',
+  timestamp: '2023-06-10T16:31:07.824Z'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM!',
+  timestamp: '2023-06-10T16:31:07.855Z'
+}
+{
+  message: 'Connected to mongo 🧠',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM!',
+  timestamp: '2023-06-10T16:55:19.322Z'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'UM!',
+  timestamp: '2023-06-10T16:55:19.341Z'
+}
