@@ -29,9 +29,9 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res) => {
     errorMessages = simplifiedError.errorMessages;
   } else if (error.name === 'CastError') {
     const simplifiedError = handleCastError(error);
-    statusCode = simplifiedError.statusCode;
-    message = simplifiedError.message;
-    errorMessages = simplifiedError.errorMessages;
+    statusCode = simplifiedError?.statusCode;
+    message = simplifiedError?.message;
+    errorMessages = simplifiedError?.errorMessages;
   } else if (error instanceof ApiError) {
     statusCode = error?.statusCode;
     message = error?.message;
@@ -60,7 +60,6 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res) => {
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
-  // next();
 };
 
 export default globalErrorHandler;
